@@ -62,7 +62,7 @@ nav a:hover, nav a.active {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('img/HOME/Idea\ mai.jpg') center/cover no-repeat;
+  background: url('Idea mai.jpg') center/cover no-repeat;
   filter: brightness(0.6);
   transform: scale(1.05);
   animation: zoom 15s ease-in-out infinite alternate;
@@ -126,3 +126,4 @@ footer {
   color: #777;
   font-size: 0.9rem;
 }
+

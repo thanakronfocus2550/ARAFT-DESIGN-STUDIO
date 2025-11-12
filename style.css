@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 250, 244, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #d67b2c;
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  font-weight: 400;
+}
+
+nav a:hover, nav a.active {
+  color: #d67b2c;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('img/HOME/Idea\ mai.jpg') center/cover no-repeat;
+  filter: brightness(0.6);
+  transform: scale(1.05);
+  animation: zoom 15s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes zoom {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.15); }
+}
+
+.hero-content {
+  color: white;
+  max-width: 700px;
+  padding: 0 20px;
+  animation: fadeInUp 2s ease;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #d67b2c;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  background: #d67b2c;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background: #b85f1a;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  color: #777;
+  font-size: 0.9rem;
+}
